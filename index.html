@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h3 class="text-center p-2">Markdown Previewer</h1>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col col-12 col-sm-12 col-md-5 p-3 m-3">
+                <label for="editor">Editor:</label>
+                <textarea class="form-control border border-dark border-5 rounded" name="editor" id="editor" rows="15" cols="18"></textarea>
+            </div>
+
+            <div class="col col-12 col-sm-12 col-md-5 p-3 m-3">
+                <label for="preview">Preview:</label>
+                <div id="preview" class="bg-white border border-dark border-5 rounded p-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <script src="main.js"></script>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
